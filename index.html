@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        gap: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .left {
+        width: 24%;
+    }
+
+    .left li {
+        list-style: none;
+        border: 2px solid gray;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .left li:hover {
+        background-color: rgb(223, 218, 218);
+    }
+
+    .left a {
+        text-decoration: none;
+    }
+
+    .right {
+        width: 75%;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .right li {
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <ul>
+                <h2>Documentation Menu</h2>
+                <li><a href="tech_docs/c++.html" target="right">What is C++</a></li>
+                <li><a href="tech_docs/object_class.html" target="right">Objects and Classes</a></li>
+                <li><a href="tech_docs/inheritance.html" target="right">Inheritance</a></li>
+                <li><a href="tech_docs/polymorphism.html" target="right">Polymorphism</a></li>
+                <li><a href="tech_docs/abstraction.html" target="right">Abstraction</a></li>
+                <li><a href="tech_docs/encapsulation.html" target="right">Encapsulation</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <iframe src="" frameborder="0" width="100%"  name="right"height="500px"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>

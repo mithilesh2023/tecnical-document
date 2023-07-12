@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        font-size: large;
+
+    }
+</style>
+
+<body>
+    <div class="right">
+        <h2>Inheritance</h2>
+        <p>Inheritance enables you to define a class that takes all the functionality from a parent class and allows you
+            to add more.</p>
+
+        <p>Using class inheritance, a class can inherit all the methods and properties of another class.</p>
+
+        <p> Inheritance is a useful feature that allows code reusability.</p>
+        <p>To use class inheritance, you use the extends keyword. For example,</p>
+        <h3>
+            // parent class 
+            class Person { <br>
+            constructor(name) {<br>
+            this.name = name;<br>
+            }
+<br>
+            greet() {<br>
+            console.log(`Hello ${this.name}`);<br>
+            }<br>
+            }<br>
+<br>
+            // inheriting parent class<br>
+            class Student extends Person {<br>
+<br>
+            }<br>
+<br>
+            let student1 = new Student('Jack');<br>
+            student1.greet();<br>
+        </h3>
+    </div>
+</body>
+
+</html>

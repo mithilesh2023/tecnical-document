@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    li {
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="first">
+        <h2>What are Abstract Classes?</h2>
+        <ul>
+            <li>Abstract classes can be defined as classes that cannot be instantiated, i.e., whose object reference
+                cannot be created and contains one or more abstract methods within it.</li>
+            <li> An abstract method is a method that can only be declared but has no implementation to it.</li>
+            <li> Abstract classes need to be inherited and require subclasses to provide implementations for the method
+                declared in the abstract class.</li>
+            <li> As in Java, we have the abstract keyword to make a class an abstract class; there are no such reserve
+                keywords in JavaScript to declare a class an abstract class.</li>
+        </ul>
+        <h4>
+            //Created an abstract class (constructor function) <br>
+            function Employee() { <br>
+            this.empName = "empName"; <br>
+            if (this.constructor === Employee) { <br>
+            throw new Error("FYI: Instance of Abstract class cannot be instantiated"); <br>
+            } <br>
+            }; <br>
+            // Method (function) of our abstract class <br>
+            Employee.prototype.display = function () { return this.empName; } <br>
+            var employee = new Employee(); <br>
+
+        </h4>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <div class="right">
+        <h2>What is Polymorphism?</h2>
+        <p>Polymorphism is one of the core concepts of object-oriented programming languages where poly means many and morphism means transforming one form into another. Polymorphism means the same function with different signatures is called many times. In real life, for example, a boy at the same time may be a student, a class monitor, etc. So a boy can perform different operations at the same time. This is called polymorphism. </p>
+        <h2>Features of Polymorphism:</h2>
+        <ul>
+            <li>Programmers can use the same method name repeatedly.</li>
+            <li>Polymorphism has the effect of reducing the number of functionalities that can be paired together.</li>
+        </ul>
+        <h2>Inheritance Polymorphism in JavaScript:</h2>
+        <p>In this example, we will create three functions with the same name and different operations. This program shows JavaScript Inheritance polymorphism.</p>
+        <h3>example perform javascript inheritance polymorphism.</h3>
+        <h4>class firstClass { <br>
+            add() {<br>
+                console.log("First Method")<br>
+            }<br>
+        }<br>
+        class secondClass extends firstClass {<br>
+            add() {<br>
+                console.log(30 + 40);<br>
+            }<br>
+        }<br>
+        class thirdClass extends secondClass {<br>
+            add() {<br>
+                console.log("Last Method")<br>
+            }<br>
+        }<br>
+        let ob = new firstClass();<br>
+        let ob2 = new secondClass();<br>
+        let ob3 = new thirdClass();<br>
+        ob.add();<br>
+        ob2.add();<br>
+        ob3.add();</h4>
+    </div>
+</body>
+</html>
